@@ -50,7 +50,7 @@ class Forecast{
             if let min = temp["min"] as? Double {
                 
                 let kelvinToCelcius = min - 273.16
-                _lowTemp = "\(Double(round(10*kelvinToCelcius/10)))"
+                _lowTemp = "\(Double(round(kelvinToCelcius)))"
                 
                 
             }
